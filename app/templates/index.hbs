@@ -1,0 +1,23 @@
+{{outlet}}
+
+<div class="container table-responsive">
+  <div> <h1> Customers</h1></div>
+  <table class="table">
+    <thead>
+      <th>id</th>
+      <th>name</th>
+      <th>email</th>
+      <th>Action</th>
+    </thead>
+    <tbody>
+      {{#each model as |customer|}}
+      <tr>
+        <td>{{customer.id}}</td>
+        <td>{{customer.name}}</td>
+        <td>{{customer.email}}</td>
+        <td></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
